@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api:
+    image: bfarrell20/Roulettech-Technical:latest
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8000:8000"
+    
