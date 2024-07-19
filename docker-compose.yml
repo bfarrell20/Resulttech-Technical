@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    image: bfarrell20/Roulettech-Technical:latest
+    image: bfarrell20/roulettech-technical:latest
     build:
       context: .
       dockerfile: dockerfile

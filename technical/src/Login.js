@@ -13,8 +13,9 @@ function Login({ onLogin, onToggleSignup }) {
         username,
         password,
       });
-      onLogin(response.data);
+      onLogin(response.data.token); // Ensure response.data.token matches what the backend sends
     } catch (error) {
+      console.error('Login error:', error.response || error.message); // Log detailed error
       setError('Invalid username or password');
     }
   };
