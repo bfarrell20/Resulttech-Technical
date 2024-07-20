@@ -22,7 +22,7 @@ function App() {
     <div>
       {isLoggedIn ? (
         <div>
-          <h1>Welcome, {user ? user.username : 'User'}!</h1> {/* Safeguard for null */}
+          <h1>Welcome{user ? user.username : 'User'}!</h1> {/* Safeguard for null */}
         </div>
       ) : (
         <div>

@@ -35,4 +35,3 @@ def login(request):
         print('gets here', token)
         return Response({'token': token.key})
     return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
-

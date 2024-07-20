@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install dependencies including python3-venv
+# Install dependencies including python3-venv and MySQL client development libraries
 RUN apt-get update && \
-    apt-get install -y python3-dev python3-venv build-essential pkg-config python3-pip curl vim && \
+    apt-get install -y python3-dev python3-venv build-essential pkg-config python3-pip curl vim default-libmysqlclient-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

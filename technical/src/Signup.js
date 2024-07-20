@@ -14,7 +14,7 @@ function Signup({ onSignup }) {
       return;
     }
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/signup/', {
+      const response = await axios.post('http://18.218.141.58:8000/api/signup/', {
         username,
         password,
       });

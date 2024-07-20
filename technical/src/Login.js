@@ -9,7 +9,7 @@ function Login({ onLogin, onToggleSignup }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/login/', {
+      const response = await axios.post('http://18.218.141.58:8000/api/login/', {
         username,
         password,
       });
